@@ -1,0 +1,18 @@
+<!-- fiction.component.html -->
+
+<h2>Fiction Book List</h2>
+<ul>
+  <li *ngFor="let book2 of fictionBooks">
+    {{ book2.title }} - ${{ book2.price }}
+    <button (click)="addToCart(book2)">Add to Cart</button>
+  </li>
+</ul>
+
+<h3>Shopping Cart</h3>
+<ul>
+  <li *ngFor="let cartItem of cartItems">
+    {{ cartItem.title }} - ${{ cartItem.price }}
+  </li>
+</ul>
+
+<p>Total Bill: ${{ getTotalBill() }}</p>

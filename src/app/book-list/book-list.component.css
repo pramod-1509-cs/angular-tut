@@ -1,0 +1,13 @@
+h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgb(54, 54, 224);
+    color: aliceblue;
+}
+li{
+    color: rgb(190, 2, 40);
+    
+}

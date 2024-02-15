@@ -1,0 +1,15 @@
+h2{
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about{
+    width: 100% 100%;
+    text-align: center;
+    border: 0px solid white;
+    padding-left: 40px;
+    padding-right: 40px;
+    place-items: center;
+    
+}
+ 

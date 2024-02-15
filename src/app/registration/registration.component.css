@@ -1,0 +1,41 @@
+/* registration.component.css */
+h1{
+    color: red;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(28, 155, 240);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #ffffff;
+    color: black;
+  }
+  button:hover{
+    background-color: blue;
+    color: #ffffff;
+  }
+  /* registration.component.css */
+
+div.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px; /* Add some spacing between the input and the error message */
+}

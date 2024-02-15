@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .a-tag, .a-tag2 {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: aqua;
+    transition: background-color 0.3s;
+  }
+  
+  .a-tag:hover, .a-tag2:hover {
+    background-color: #66c2ff; /* Light blue for hover effect */
+  }
+  

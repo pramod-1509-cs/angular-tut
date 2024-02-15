@@ -1,0 +1,7 @@
+<h2>Non-Fiction Book List</h2>
+<ul>
+  <li *ngFor="let book of books">
+    {{ book.title }} - ${{ book.price }}
+    <button (click)="addToCart(book)">Add to Cart</button>
+  </li>
+</ul>

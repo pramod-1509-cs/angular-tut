@@ -1,0 +1,35 @@
+<!-- registration.component.html -->
+
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" novalidate>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" formControlName="firstName" required placeholder="Enter your first name">
+  <div class="error-message" *ngIf="registrationForm!.get('firstName')!.hasError('required') && registrationForm!.get('firstName')!.touched">
+      Please enter your first name.
+  </div>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" formControlName="lastName" required placeholder="Enter your last name">
+  <div class="error-message" *ngIf="registrationForm!.get('lastName')!.hasError('required') && registrationForm!.get('lastName')!.touched">
+      Please enter your last name.
+  </div>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" formControlName="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Enter your email">
+  <div class="error-message" *ngIf="registrationForm.get('email')!.hasError('required') && registrationForm.get('email')!.touched">
+      Please enter your email.
+  </div>
+  <div class="error-message" *ngIf="registrationForm.get('email')!.hasError('pattern') && registrationForm.get('email')!.touched">
+      Please enter a valid email address.
+  </div>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" formControlName="password" minlength="6" required placeholder="Enter your password">
+  <div class="error-message" *ngIf="registrationForm.get('password')!.hasError('required') && registrationForm.get('password')!.touched">
+      Please enter your password.
+  </div>
+  <div class="error-message" *ngIf="registrationForm.get('password')!.hasError('minlength') && registrationForm.get('password')!.touched">
+      Password should be at least 6 characters long.
+  </div>
+
+  <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+</form>

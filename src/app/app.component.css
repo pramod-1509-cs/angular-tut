@@ -1,0 +1,7 @@
+h1{
+    color: dodgerblue;
+    text-align: center;
+}
+body{
+    background-image: linear-gradient(to right, rgb(207, 200, 200),rgb(63, 58, 58));
+}
